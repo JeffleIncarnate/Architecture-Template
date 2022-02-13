@@ -134,4 +134,6 @@ header h1 {
 
 .greyBox {
   position: relative;
+  left: 50px;
+  top: 10px;
 }
