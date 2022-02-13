@@ -33,20 +33,20 @@ header h1 {
   position: relative;
 }
 
-/* Position the navbar container inside the image */
 .container {
   position: absolute;
   margin: 20px;
   width: auto;
 }
 
-/* The navbar */
 .topnav {
   overflow: hidden;
+  position: fixed;
   background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
-/* Navbar links */
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -62,7 +62,6 @@ header h1 {
 }
 
 /* ---- SIDE NAV ---- */
-/* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -72,11 +71,10 @@ header h1 {
   left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
-/* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -86,12 +84,10 @@ header h1 {
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -100,7 +96,6 @@ header h1 {
   margin-left: 50px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -108,4 +103,31 @@ header h1 {
   .sidenav a {
     font-size: 18px;
   }
+}
+
+/* ---- MAIN ---- */
+/* -- One -- */
+.one {
+  margin: 3rem 10% 3rem 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.one .text {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.one .text h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.one .images img {
+  max-width: 100%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+  border-radius: 20px;
 }
