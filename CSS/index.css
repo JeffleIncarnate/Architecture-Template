@@ -1,7 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -56,6 +65,7 @@ header h1 {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: all 0.3s ease-in-out;
 }
 
 .topnav a:hover {
@@ -68,26 +78,30 @@ header h1 {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 1000; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: black; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 1rem;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: grey;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: white;
 }
 
 .sidenav .closebtn {
