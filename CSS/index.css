@@ -23,6 +23,7 @@ header h1 {
 
 /* ---- NAV BAR ---- */
 .bg-img {
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../Images/Index/Header\ image.png");
   width: 100vw;
@@ -120,10 +121,11 @@ header h1 {
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-right: 60px;
 }
-.one .text h1 {
-  font-size: 2rem;
-  padding: 1rem;
+.one .text h2 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
 }
 
 .one .images img {
@@ -133,7 +135,17 @@ header h1 {
 }
 
 .greyBox {
-  position: relative;
-  left: 50px;
-  top: 10px;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
+
+.boxOne {
+  top: 35rem;
+  right: 2rem;
+}
+
+.boxTwo {
+  top: 53rem;
+  right: 30rem;
 }
