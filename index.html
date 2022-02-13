@@ -1,52 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css" />
     <script
-    src="https://kit.fontawesome.com/866b8b01f2.js"
-    crossorigin="anonymous"
-  ></script>
-</head>
-<body>
+      src="https://kit.fontawesome.com/866b8b01f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!--Header-->
     <header>
-        <div class="bg-img">
-            <div class="container">
-              <div class="topnav">
-                <a onclick="openNav()"><i class="fas fa-bars"></i></a>
-              </div>
-            </div>
-            <h1>Your vision is our vision</h1>
+      <div class="bg-img">
+        <div class="container">
+          <div class="topnav">
+            <a onclick="openNav()"><i class="fas fa-bars"></i></a>
           </div>
+        </div>
+        <h1>Your vision is our vision</h1>
+      </div>
 
-          <!--SIDE NAV-->
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
+      <!--SIDE NAV-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
     </header>
 
     <!--Main-->
     <main>
       <div class="one">
         <!--Text-->
-        <div class="text">
+        <div class="textOne">
           <h2>We are Designers, Architects and Planners</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat velit vel officia, ipsam nobis repudiandae deserunt harum, laboriosam assumenda aut error! Unde, dignissimos illo! Quod labore doloremque maiores consequuntur neque!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            velit vel officia, ipsam nobis repudiandae deserunt harum,
+            laboriosam assumenda aut error! Unde, dignissimos illo! Quod labore
+            doloremque maiores consequuntur neque!
+          </p>
         </div>
 
         <!--Images-->
         <div class="images">
-          <img src="Images/Index/cody-west-9uMx5xd-35k-unsplash.jpg" alt="Image of Building">
-          <img class="greyBox boxOne" src="Images/Index/grey.png" alt="grey image">
-        <img class="greyBox boxTwo" src="Images/Index/grey.png" alt="grey image">
+          <img
+            src="Images/Index/cody-west-9uMx5xd-35k-unsplash.jpg"
+            alt="Image of Building"
+          />
+          <img
+            class="greyBox boxOne"
+            src="Images/Index/grey.png"
+            alt="grey image"
+          />
+          <img
+            class="greyBox boxTwo"
+            src="Images/Index/grey.png"
+            alt="grey image"
+          />
+        </div>
+      </div>
+
+      <!--GRID-->
+      <div id="ongoing_projects">
+        <div class="image-grid">
+          <div class="container image-grid-col-2 image-grid-row-2">
+            <a target="_blank" href="https://ojc-badges.netlify.app/">
+              <img
+                src="Images/Index/Grid/artem-shuba-GYSiH1N6pxE-unsplash.jpg"
+                alt="OJC Badges Website Image"
+              />
+              <div class="overlay">
+                <div class="text">Project 1</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a href="#top">
+              <img
+                src="Images/Index/Grid/christian-lambert-u_IPFEHHWhg-unsplash.jpg"
+                alt="SmokeTrails"
+              />
+              <div class="overlay">
+                <div class="text">Project 2</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a
+              target="_blank"
+              href="https://github.com/Dhruv-Rayat1/Paige-Virtual-Assistant-"
+            >
+              <img
+                src="Images/Index/Grid/janmesh-shah-M90XoRvrC8Y-unsplash.jpg"
+                alt="SmokeTrails"
+              />
+              <div class="overlay">
+                <div class="text">Project 3</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a
+              target="_blank"
+              href="https://github.com/Dhruv-Rayat1/Traffic-Light-System"
+            >
+              <img
+                src="Images/Index/Grid/kenan-alboshi-UCbY7s2bF4o-unsplash.jpg"
+                alt="SmokeTrails"
+              />
+              <div class="overlay">
+                <div class="text">Project 4</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a href="">
+              <img
+                src="Images/Index/Grid/linus-belanger-qxIp1On_USc-unsplash.jpg"
+                alt="SmokeTrails"
+              />
+              <div class="overlay">
+                <div class="text">Project 5</div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </main>
@@ -56,5 +145,5 @@
 
     <!--Scripts-->
     <script src="Javascript/sideNav.js"></script>
-</body>
+  </body>
 </html>

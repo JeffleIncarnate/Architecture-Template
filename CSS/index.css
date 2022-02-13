@@ -43,6 +43,7 @@ header h1 {
 .topnav {
   overflow: hidden;
   position: fixed;
+  z-index: 999;
   background-color: #333;
   border-radius: 10px;
   box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
@@ -116,14 +117,14 @@ header h1 {
   align-items: center;
 }
 
-.one .text {
+.one .textextOnet {
   padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   margin-right: 60px;
 }
-.one .text h2 {
+.one .textOne h2 {
   font-size: 2.3rem;
   padding-bottom: 1rem;
 }
@@ -148,4 +149,81 @@ header h1 {
 .boxTwo {
   top: 53rem;
   right: 30rem;
+}
+/* ---- GRID ---- */
+/* -- GRID --  */
+#ongoing_projects {
+  margin-top: 5rem;
+  height: auto;
+}
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+  width: 97%;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* -- TEXT HOVER GRID -- */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  border-radius: 1rem;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
