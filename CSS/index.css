@@ -131,12 +131,13 @@ header h1 {
   align-items: center;
 }
 
-.one .textextOnet {
+.one .textOne {
   padding: 20px;
-  text-align: center;
+  text-align: start;
   display: flex;
   flex-direction: column;
   margin-right: 60px;
+  width: 50%;
 }
 .one .textOne h2 {
   font-size: 2.3rem;
@@ -147,6 +148,10 @@ header h1 {
   max-width: 100%;
   box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
   border-radius: 20px;
+}
+
+.one .images {
+  width: 50%;
 }
 
 .greyBox {
@@ -161,8 +166,8 @@ header h1 {
 }
 
 .boxTwo {
-  top: 57rem;
-  right: 36rem;
+  top: 53rem;
+  right: 29rem;
 }
 
 /* ---- GRID ---- */
@@ -243,22 +248,45 @@ header h1 {
 }
 
 /* ---- About us ---- */
-.aboutUs {
-  margin: 3rem 10% 3rem 10%;
+.two {
+  margin: 5rem 10% 3rem 10%;
   width: 80%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: end;
 }
 
-.aboutText {
-  width: 35%;
+.two .textTwo {
+  padding: 20px;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  width: 50%;
+}
+.two .textTwo h2 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
 }
 
-.aboutImage {
-  width: 60%;
+.two .imagesTwo {
+  width: 50%;
 }
 
-.aboutImage img {
+.two .imagesTwo img {
   max-width: 100%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+  border-radius: 20px;
+}
+
+.boxThree {
+  top: 108rem;
+  left: 2rem;
+}
+
+.boxFour {
+  top: 126rem;
+  left: 33rem;
 }
