@@ -1,6 +1,6 @@
 # Architecture-Template
 
-# Description
+## Description
 
 This is a website template I'm working on, this will be a very basic static website you will be able to download soon (once i'm down with it)
 
