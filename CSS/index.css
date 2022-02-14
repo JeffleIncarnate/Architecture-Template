@@ -241,3 +241,8 @@ header h1 {
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
+
+/* ---- About us ---- */
+.aboutUs {
+  width: 90%;
+}
