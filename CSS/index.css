@@ -65,7 +65,7 @@ header h1 {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease 0s;
 }
 
 .topnav a:hover {
@@ -161,11 +161,11 @@ header h1 {
 }
 
 .boxTwo {
-  top: 53rem;
-  right: 30rem;
+  top: 57rem;
+  right: 36rem;
 }
+
 /* ---- GRID ---- */
-/* -- GRID --  */
 #ongoing_projects {
   margin-top: 5rem;
   height: auto;
@@ -244,5 +244,21 @@ header h1 {
 
 /* ---- About us ---- */
 .aboutUs {
-  width: 90%;
+  margin: 3rem 10% 3rem 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutText {
+  width: 35%;
+}
+
+.aboutImage {
+  width: 60%;
+}
+
+.aboutImage img {
+  max-width: 100%;
 }
