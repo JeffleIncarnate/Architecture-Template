@@ -81,7 +81,7 @@ header h1 {
   z-index: 1000; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: black; /* Black*/
+  background-color: #333; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px;
   transition: 0.5s;
