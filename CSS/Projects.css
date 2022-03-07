@@ -1,0 +1,376 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ---- Header ---- */
+header {
+  display: flex;
+}
+
+header h1 {
+  color: white;
+  position: relative;
+  top: 43%;
+  left: 24vw;
+  font-size: 3.5rem;
+}
+
+/* ---- NAV BAR ---- */
+.bg-img {
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../Images/Index/Header\ image.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s ease 0s;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* ---- SIDE NAV ---- */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #333; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidenav a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* ---- MAIN ---- */
+/* -- One -- */
+.one {
+  margin: 3rem 10% 3rem 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.one .textOne {
+  padding: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  width: 50%;
+}
+.one .textOne h2 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.one .images img {
+  max-width: 100%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+  border-radius: 20px;
+}
+
+.one .images {
+  width: 50%;
+}
+
+.greyBox {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
+
+.boxOne {
+  top: 35rem;
+  right: 2rem;
+}
+
+.boxTwo {
+  top: 53rem;
+  right: 29rem;
+}
+
+/* ---- GRID ---- */
+#ongoing_projects {
+  margin-top: 5rem;
+  height: auto;
+}
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+  width: 97%;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* -- TEXT HOVER GRID -- */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  border-radius: 1rem;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/* ---- About us ---- */
+.two {
+  margin: 5rem 10% 3rem 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.two .textTwo {
+  padding: 20px;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  width: 50%;
+}
+.two .textTwo h2 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.two .imagesTwo {
+  width: 50%;
+}
+
+.two .imagesTwo img {
+  max-width: 100%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+  border-radius: 20px;
+}
+
+.boxThree {
+  top: 108rem;
+  left: 2rem;
+}
+
+.boxFour {
+  top: 126rem;
+  left: 33rem;
+}
+
+/* ---- FOOTER ---- */
+/* ---- FOOTER ---- */
+.container_footer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #585454;
+  padding: 70px 0;
+  margin-top: 10rem;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: black;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: var(--accent);
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: black;
+  background-color: white;
+}

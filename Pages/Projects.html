@@ -3,8 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=s, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../CSS/Projects.css" />
+    <script
+      src="https://kit.fontawesome.com/866b8b01f2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="bg-img">
+        <div class="container">
+          <div class="topnav">
+            <a onclick="openNav()"><i class="fas fa-bars"></i></a>
+          </div>
+        </div>
+        <h1>Your vision is our vision</h1>
+      </div>
+
+      <!--SIDE NAV-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="Pages/samples.html">Samples</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+
+    <!--Main-->
+    <main>
+      <div class="one">
+        <!--Text-->
+        <div class="textOne">
+          <h2>This could be used for a quick intro</h2>
+          <p>
+            This is a small paragraph going into more detail... Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptate, dolorum.
+          </p>
+        </div>
+
+        <!--Images-->
+        <div class="images">
+          <img
+            src="Images/Index/cody-west-9uMx5xd-35k-unsplash.jpg"
+            alt="Image of Building"
+          />
+          <img
+            class="greyBox boxOne"
+            src="Images/Index/grey.png"
+            alt="grey image"
+          />
+          <img
+            class="greyBox boxTwo"
+            src="Images/Index/grey.png"
+            alt="grey image"
+          />
+        </div>
+      </div>
+
+      <!--GRID-->
+      <div id="ongoing_projects">
+        <div class="image-grid">
+          <div class="container image-grid-col-2 image-grid-row-2">
+            <a target="_blank" href="#top">
+              <img
+                src="Images/Index/Grid/artem-shuba-GYSiH1N6pxE-unsplash.jpg"
+                alt="Image"
+              />
+              <div class="overlay">
+                <div class="text">Project 1</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a target="_blank" href="#top">
+              <img
+                src="Images/Index/Grid/christian-lambert-u_IPFEHHWhg-unsplash.jpg"
+                alt="Image"
+              />
+              <div class="overlay">
+                <div class="text">Project 2</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a target="_blank" href="#top">
+              <img
+                src="Images/Index/Grid/janmesh-shah-M90XoRvrC8Y-unsplash.jpg"
+                alt="Image"
+              />
+              <div class="overlay">
+                <div class="text">Project 3</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a target="_blank" href="#top">
+              <img
+                src="Images/Index/Grid/kenan-alboshi-UCbY7s2bF4o-unsplash.jpg"
+                alt="Image"
+              />
+              <div class="overlay">
+                <div class="text">Project 4</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <a target="_blank" href="#top">
+              <img
+                src="Images/Index/Grid/linus-belanger-qxIp1On_USc-unsplash.jpg"
+                alt="Image"
+              />
+              <div class="overlay">
+                <div class="text">Project 5</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="two">
+        <!--Text-->
+        <div class="textTwo">
+          <h2>This could be a About us Section</h2>
+          <p>
+            This could explain more of your work ethic, relationships etc...
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim,
+            nihil.
+          </p>
+        </div>
+
+        <!--Images-->
+        <div class="imagesTwo">
+          <img
+            src="Images/Index/cody-west-9uMx5xd-35k-unsplash.jpg"
+            alt="Image of Building"
+          />
+          <img
+            class="greyBox boxThree"
+            src="Images/Index/grey.png"
+            alt="grey image"
+          />
+          <img
+            class="greyBox boxFour"
+            src="Images/Index/grey.png"
+            alt="grey image"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer" id="footer">
+      <div class="container_footer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Lorem</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Lorem, ipsum.</h4>
+            <ul>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="Javascript/sideNav.js"></script>
+  </body>
 </html>
